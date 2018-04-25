@@ -132,6 +132,10 @@ main section p {
   margin: 10px 10px;
 }
 
+#back_to_top_button {
+  display: none;
+}
+
 /*footer*/
 
 footer {
@@ -198,6 +202,14 @@ footer {
   .crane_pics img {
     width: 100%;
     margin: 10px 0px;
+  }
+
+  #back_to_top_button {
+    display: block;
+    position: fixed;
+    font-size: 40px;
+    right: 10px;
+    bottom: 0px;
   }
 
   main {
