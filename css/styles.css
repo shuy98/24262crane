@@ -157,6 +157,11 @@ footer {
     padding-left: 30px;
     display: inline-block;
   }
+
+  .crane_pics img {
+    width: 100%;
+    margin: 10px 0px;
+  }
 }
 
 
