@@ -20,6 +20,10 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+header #back_to_top {
+  transition: bottom 0.2s ease-in-out;
+}
+
 
 /*banner*/
 
@@ -133,9 +137,10 @@ main section p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 
-#back_to_top_button {
+#back_to_top {
   display: none;
 }
+
 
 /*footer*/
 
@@ -210,12 +215,19 @@ footer {
     margin: 10px 0px;
   }
 
-  #back_to_top_button {
+  #back_to_top {
     display: block;
     position: fixed;
-    font-size: 40px;
+    font-size: 60px;
     right: 10px;
+  }
+
+  .back_to_top_button {
     bottom: 0px;
+  }
+
+  .back_to_top_button_hide {
+    bottom: -100px;
   }
 
   main {
