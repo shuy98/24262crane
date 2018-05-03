@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" 
+  <meta name="description"
         content="Project report for course S18 24-262 Stress Analysis">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <title>S18 24-262 - Crane Project Group 7</title>   
+  <title>S18 24-262 - Crane Project Group 7</title>
 </head>
 
 <body>
-  <header>   
+  <header>
 
     <!-- mobile banner -->
     <div id="banner_m" class="w3-bar">
@@ -39,13 +39,13 @@
       </a>
 
       <div class="nav_main_links">
-        <a href="#top" class="w3-bar-item w3-ripple w3-button smoothScroll" title="about this project">About this project</a>      
-        <a href="#Mechanism" class="w3-bar-item w3-ripple w3-button smoothScroll" title="How does the mechanism work">How does it work ?</a>      
-        <a href="#Features" class="w3-bar-item w3-ripple w3-button smoothScroll" title="features about the mechanism">Features</a>   
+        <a href="#top" class="w3-bar-item w3-ripple w3-button smoothScroll" title="about this project">About this project</a>
+        <a href="#Mechanism" class="w3-bar-item w3-ripple w3-button smoothScroll" title="How does the mechanism work">How does it work ?</a>
+        <a href="#Features" class="w3-bar-item w3-ripple w3-button smoothScroll" title="features about the mechanism">Features</a>
         <a href="#Performance" class="w3-bar-item w3-ripple w3-button smoothScroll" title="Overall performance">Performance</a>
         <a href="#Analysis" class="w3-bar-item w3-ripple w3-button smoothScroll" title="structural analysis">Analysis</a>
         <a href="#Principle" class="w3-bar-item w3-ripple w3-button smoothScroll" title="stress analysis principles involved">Structural Principles</a>
-        <a href="#Gallery" class="w3-bar-item w3-ripple w3-button smoothScroll" title="pictures">Gallery</a>  
+        <a href="#Gallery" class="w3-bar-item w3-ripple w3-button smoothScroll" title="pictures">Gallery</a>
       </div>
     </nav>
 
@@ -55,13 +55,12 @@
       <h2 id="groupinfo">Group 7 <br>
       with Jason Liu (limingl), Tom An (zixia), and Shu You (shuy)</h2>
       <hr>
-    </div>   
-    
+    </div>
   </header>
 
   <main role="main">
     <section>
-      <h3 id="About">About this project</h3> 
+      <h3 id="About">About this project</h3>
       <p>Carnegie Mellon University (Carnegie Mellon or CMU /ˈkɑːrnɪɡi ˈmɛlən/ or /kɑːrˈneɪɡi ˈmɛlən/) is a private research university in Pittsburgh, Pennsylvania.
 
       Founded in 1900 by Andrew Carnegie as the Carnegie Technical Schools, the university became the Carnegie Institute of Technology in 1912 and began granting four-year degrees. In 1967, the Carnegie Institute of Technology merged with the Mellon Institute of Industrial Research to form Carnegie Mellon University.
@@ -102,7 +101,7 @@
     </section>
 
     <section>
-      <h3 id="Gallery">Gallery</h3>    
+      <h3 id="Gallery">Gallery</h3>
       <iframe scrolling='no' frameborder='0' allowfullscreen='true' src='http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&catalogid=171&modelid=925877&width=250&height=250&edraw=true' name='PreviewFrame3D' id='PreviewFrame3D' ></iframe><br/>
       <div class="crane_pics">
         <img src="images/crane_pic_1.jpg" width="45%">
@@ -112,13 +111,13 @@
       </div>
     </section>
   </main>
-  
+
   <footer role="contentinfo">
     <hr>
     <p>
       &copy; S18 24-262 Crane Project Group 7
     </p>
-  </footer> 
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
@@ -139,7 +138,7 @@
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function(){
-       
+
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
@@ -169,11 +168,11 @@
 
     function hasScrolled() {
         var st = $(this).scrollTop();
-        
+
         // Make sure they scroll more than delta
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
-        
+
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight){
@@ -185,11 +184,10 @@
                 $('#back_to_top').removeClass('back_to_top_button_hide').addClass('back_to_top_button');
             }
         }
-        
+
         lastScrollTop = st;
     }
-
   </script>
-  
+
 </body>
 </html>
