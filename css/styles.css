@@ -168,6 +168,11 @@ footer {
     width: 100%;
     margin: 10px 0px;
   }
+
+  main h3 {
+    text-decoration: underline;
+  }
+
 }
 
 
@@ -235,6 +240,10 @@ footer {
     margin-right: 0;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  main h3 {
+    text-decoration: underline;
   }
 
   footer {
