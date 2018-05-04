@@ -1,6 +1,5 @@
 # 24262crane
 CMU S18 24-262 Crane Project Group 7 Website
-
-Only shared between CMU MechE S18 24-262 Group 7 Members
-
 URL: http://www.andrew.cmu.edu/user/shuy/24262crane/
+
+Term project for the course 24-262 Stress Analysis from Mechanical Engineering Department in Carnegie Mellon University. 
