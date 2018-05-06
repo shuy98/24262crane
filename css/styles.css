@@ -3,6 +3,8 @@
 @font-face {
   font-family: "BBBB";
   src: url("../font/Bauer Bodoni Bold BT.ttf");
+  font-family: "LM";
+  src: url("../font/latinmodern-math.otf")
 }
 
 /*global style*/
@@ -118,12 +120,30 @@ main {
   min-width: 360px;
 }
 
+.subheading {
+  text-decoration: underline;
+}
+
+.subsection {
+  margin: 0 20px;
+}
+
+.subsection p {  
+  text-indent: 0;
+}
+
 main section {  
    margin-bottom: 40px;
 }
 
 main section p {
    text-indent: 40px;
+}
+
+.equation {
+  text-align: center;
+  font-family: LM;
+  font-size: 14pt;
 }
 
 main iframe {

@@ -41,8 +41,8 @@
       <div class="nav_main_links">
         <a href="#top" class="w3-bar-item w3-ripple w3-button smoothScroll" title="about this project">About this project</a>
         <a href="#Features" class="w3-bar-item w3-ripple w3-button smoothScroll" title="features about the mechanism">Features</a>
-        <a href="#Performance" class="w3-bar-item w3-ripple w3-button smoothScroll" title="Overall performance">Performance</a>
-        <a href="#Analysis" class="w3-bar-item w3-ripple w3-button smoothScroll" title="structural analysis">Analysis</a>
+        <a href="#Performance" class="w3-bar-item w3-ripple w3-button smoothScroll" title="Overall performance">Performance<br>Analysis</a>
+        <a href="#Discussion" class="w3-bar-item w3-ripple w3-button smoothScroll" title="structural analysis">Discussion</a>
         <a href="#Principle" class="w3-bar-item w3-ripple w3-button smoothScroll" title="stress analysis principles involved">Structural Principles</a>
         <a href="#Gallery" class="w3-bar-item w3-ripple w3-button smoothScroll" title="pictures">Gallery</a>
       </div>
@@ -68,7 +68,7 @@
       <ul>
         <li style="text-decoration: line-through;">Names of team members</li> 
         <li style="text-decoration: line-through;">A paragraph describing how your mechanism works.</li> 
-        <li>A section including theoretical predictions of the performance of your mechanism (like your Hand Analysis from Design Review #1, but improved based on your increased understanding).</li>
+        <li style="text-decoration: line-through;">A section including theoretical predictions of the performance of your mechanism (like your Hand Analysis from Design Review #1, but improved based on your increased understanding).</li>
         <li>List your mechanism’s interesting and original features, including those aspects of which you are most proud.</li>
         <li>Explain how your design takes advantage of structural principles learned in the class, making references to photos of relevant portions wherever appropriate.</li>
       </ul>
@@ -93,11 +93,38 @@
     </section>
 
     <section>
-      <h3 id="Performance">Performance</h3>
+      <h3 id="Performance">Performance Analysis</h3>
+      <section class="subsection">
+        <h4 class="subheading">Actual Distance Lifted: <b>4.78 inches</b></h4>
+      </section>
+      <section class="subsection">
+        <h4 class="subheading">Theoretical Servo Torque Calculation</h4>
+        <p><b>Assumptions in calculation: the load exerts a force of 1 lb. perpendicular to the servo arm; the gravitational force of the counter weight always acts perpendicular to the counterweight arm. Servo has torque 57oz-in.</b></p>
+        <p>Distance between servo rotating axis and the contact point of the servo arm   is 3 inches.<br>
+        Distance between servo rotating axis and the CM of counterweight is 8.5 inches.<br> 
+        Total torque exerted by the servo is approximately:
+        <p class="equation">16oz &middot; 3in – 4.7oz &middot; 8.5in = <b>8.05oz-in</b></p>
+        which is, 
+        <p class="equation">100% &middot; (<sup>8.05oz-in</sup>&frasl;<sub>57oz-in</sub>) = <b>14.12%</b></p> 
+        of total torque.
+        </p>
+      </section>
+      <div class="crane_pics">
+        <img src="images/crane1_annotated.png" alt="crane1_annotated" width="45%"><!--
+        --><img src="images/crane2_annotated.png" alt="crane2_annotated" width="45%">
+      </div>
+      <section class="subsection">
+        <h4 class="subheading">Theoretical Lift Distance Calculation</h4>
+        <p><b>Assumptions: the point of contact between the crane and the weight is fixed, and the crane does not move during the process.</b></p>
+        <p>The angular rotation of the servo arm is approximately 90 degrees; the servo arm rests initially at a 45-degree angle with the table surface. 
+        Let initial height be 0, we have final height z: 
+        <p class="equation">z = (3in &middot; sin(<sup>90</sup>&frasl;<sub>2</sub>)) &middot; 2 = <b>4.24in</b></p> 
+        </p>
+      </section>
     </section>
 
     <section>
-      <h3 id="Analysis">Analysis</h3>
+      <h3 id="Discussion">Discussion</h3>
     </section>
 
     <section>
