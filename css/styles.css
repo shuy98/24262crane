@@ -87,7 +87,6 @@ header #back_to_top {
   display: none;
 }
 
-
 .project_name {
   font-size: 20pt;
   color: #4d4d4d;
@@ -125,11 +124,15 @@ main {
 }
 
 .subsection {
-  margin: 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .subsection p {  
   text-indent: 0;
+}
+
+ol { 
+  padding: 0 0 0 20px;;
 }
 
 main section {  
