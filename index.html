@@ -42,7 +42,6 @@
         <a href="#top" class="w3-bar-item w3-ripple w3-button smoothScroll" title="about this project">About this project</a>
         <a href="#Features" class="w3-bar-item w3-ripple w3-button smoothScroll" title="features about the mechanism">Features</a>
         <a href="#Performance" class="w3-bar-item w3-ripple w3-button smoothScroll" title="Overall performance">Performance<br>Analysis</a>
-        <a href="#Discussion" class="w3-bar-item w3-ripple w3-button smoothScroll" title="structural analysis">Discussion</a>
         <a href="#Principle" class="w3-bar-item w3-ripple w3-button smoothScroll" title="stress analysis principles involved">Structural Principles</a>
         <a href="#Gallery" class="w3-bar-item w3-ripple w3-button smoothScroll" title="pictures">Gallery</a>
       </div>
@@ -58,28 +57,6 @@
   </header>
 
   <main role="main">
-
-    <!-- TEMPORARY SECTION -->
-    <!-- WILL BE DELETED AFTERWARDS -->
-    <section>
-      <p style="font-size: 24pt; text-align: center; text-indent: 0; background-color: #990000; color: white;">TEMPORARY TO DO LIST</p>
-
-      <p>Your team will set up a web page that describes your project so others in the class and at CMU can see your work. You can include whatever content you want on your web page report, but at a minimum it must include the following items: </p>
-      <ul>
-        <li style="text-decoration: line-through;">Names of team members</li> 
-        <li style="text-decoration: line-through;">A paragraph describing how your mechanism works.</li> 
-        <li style="text-decoration: line-through;">A section including theoretical predictions of the performance of your mechanism (like your Hand Analysis from Design Review #1, but improved based on your increased understanding).</li>
-        <li style="text-decoration: line-through;">List your mechanism’s interesting and original features, including those aspects of which you are most proud.</li>
-        <li>Explain how your design takes advantage of structural principles learned in the class, making references to photos of relevant portions wherever appropriate.</li>
-      </ul>
-
-      <a href="guideline.pdf" target="_blank" style="color: blue;">Comprehensive Guidelines</a>
-
-      <p style="font-size: 24pt; text-align: center; text-indent: 0; background-color: #990000; color: white;">TEMPORARY TO DO LIST</p> 
-    </section>
-
-
-
     <section>
       <h3 id="About">About this project</h3>
       <p>The objective of this project is to design and build a mechanism that is powered by a standard servomotor, which will lift a cylindrical weight. The mechanism is to be clamped in a given position while the other end lifts a weight that slides along a vertical post. Between the clamping area for the base of the design and the post holding the weight sits an obstacle. The mechanism may not touch the obstacle or any other surface besides the base and the sliding weight. We will build such a mechanism that is no more than <i>20Oz</i>, and it should be able to lift a <i>1lb</i> weight at least <i>2in</i> high.</p>
@@ -87,16 +64,18 @@
       <center>Our Mechanism</center>
     </section>
 
+    <hr>
+
     <section>
       <h3 id="Features">Features</h3>
       <section class="subsection">
         <ol>
           <li>We constructed an accurate model of our design using SolidWorks and used Finite Element Analysis to study the stress distribution on the crane, in order to save material from places where the stress is low and add material wherever necessary without actually physically building the crane.
           </li>
-          <div class="crane_pics" style="float: right; width: 45%; margin: 0 10px; ">
+          <div class="crane_pics_side">
               <img src="images/servo.png" alt="servo" width="100%">
-          </div>
-          <li>We used SolidWorks assemblies to simulate the lifting process to help us adjust the position of the servo mount. We also employed a 3-point fixture method to make sure the servo is securely attached to the main frame and is able to withstand the moments and forces during a lift.            
+          </div> 
+          <li>We used SolidWorks assemblies to simulate the lifting process to help us adjust the position of the servo mount. We also employed a 3-point fixture method to make sure the servo is securely attached to the main frame and is able to withstand the moments and forces during a lift.
           </li>          
           <li>We employed a three-part lifting arm mechanism (as shown in the picture above) to achieve optimal angle of contact between the arm and the weight and to maximize lifting distance. We also added a protection cap at the tip of our servo arm where it makes contact with the underside of the weight in order to reduce friction and prevent the servo arm from sliding out during operation.
 
@@ -104,14 +83,16 @@
           <li>We designed our counterweight arm to provide just enough moment to assist the servo in lifting the weight, but not to negatively affect the lifting capacity by (a) adjusting the length so it doesn’t make contact with the ground, and (b) using a guiding rail on the side of the main frame to prevent collision between the counterweight and the main body.            
           </li>
         </ol>
-      </section>
-      
+      </section>      
     </section>
+
+    <hr>
 
     <section>
       <h3 id="Performance">Performance Analysis</h3>
       <section class="subsection">
         <h4 class="subheading">Actual Distance Lifted: <b>4.78 inches</b></h4>
+        <br>
       </section>
       <section class="subsection">
         <h4 class="subheading">Theoretical Servo Torque Calculation</h4>
@@ -126,8 +107,8 @@
         </p>
       </section>
       <div class="crane_pics">
-        <img src="images/crane1_annotated.png" alt="crane1_annotated" width="45%"><!--
-        --><img src="images/crane2_annotated.png" alt="crane2_annotated" width="45%">
+        <img src="images/crane1_annotated.png" alt="crane1_annotated" width="48%"><!--
+        --><img src="images/crane2_annotated.png" alt="crane2_annotated" width="48%">
       </div>
       <section class="subsection">
         <h4 class="subheading">Theoretical Lift Distance Calculation</h4>
@@ -139,23 +120,34 @@
       </section>
     </section>
 
-    <section>
-      <h3 id="Discussion">Discussion</h3>
-    </section>
+    <hr>
 
     <section>
-      <h3 id="Principle">Structural Priciples</h3>
+      <h3 id="Principle">Structural Principles</h3>
+      <section class="subsection">        
+        <p>In this part of the main frame, the internal loading is mostly bending moment in the vertical plane. Therefore, we decided to use four L-shaped 0.75’’ aluminum strips on the top and bottom of the frame, with a larger spacing in the vertical direction than in the horizontal, in order to increase the second moment of inertia (I) and make it more resistance to bending in the vertical plane. We also added L-shaped trusses in between the bottom and top plane to limit deflection.
+        </p>
+        <div class="crane_pics">
+          <img src="images/arm.jpg" alt="arm" width="100%" style="margin-bottom: 30px;margin-left: 0;">
+        </div>
+        <div class="w3-container crane_pics"> 
+          <div class="p_vertical">In this part of the main frame, our major concern of internal loading comes from torsion (as shown below). To limit deflection, we added two flat aluminum strips oriented in opposite diagonals on the top and bottom respectively. This configuration increases Ip near the base and therefore is more resistant to torsion. We can also adjust the tension in these strips to control the angle of the main frame under loads.</div>  
+          <img src="images/base.jpg" alt="base" width="40%" id="v_base">    
+        </div>         
+      </section>
     </section>
+
+    <hr>
 
     <section>
       <h3 id="Gallery">Gallery</h3>
       <div class="crane_pics">
-        <img src="images/fea.png" alt="Finite element analysis" width="45%"><!--
-        --><img src="images/crane3_annotated.png" alt="crane drawing" width="45%"><!--
-        --><img src="images/crane_pic_1.jpg" alt="crane_pic_1" width="45%"><!--
-        --><img src="images/crane_pic_2.jpg" alt="crane_pic_2" width="45%"><!--
-        --><img src="images/crane_pic_3.jpg" alt="crane_pic_3" width="45%"><!--
-        --><img src="images/crane_pic_4.jpg" alt="crane_pic_4" width="45%">
+        <img src="images/fea.png" alt="Finite element analysis" width="48%"><!--
+        --><img src="images/crane3_annotated.png" alt="crane drawing" width="48%"><!--
+        --><img src="images/crane_pic_1.jpg" alt="crane_pic_1" width="48%"><!--
+        --><img src="images/crane_pic_2.jpg" alt="crane_pic_2" width="48%"><!--
+        --><img src="images/crane_pic_3.jpg" alt="crane_pic_3" width="48%"><!--
+        --><img src="images/crane_pic_4.jpg" alt="crane_pic_4" width="48%">
       </div>
     </section>
   </main>
