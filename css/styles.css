@@ -141,6 +141,10 @@ main {
   text-indent: 0;
 }
 
+.p_indent p {
+  text-indent: 40px;
+}
+
 ol { 
   padding: 0 0 0 20px;;
 }
@@ -274,6 +278,7 @@ footer {
 
   .crane_pics_side {
     width: 100%; 
+    margin-bottom: 20px;
   }
 
   #v_base {
