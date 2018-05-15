@@ -157,6 +157,10 @@ main section p {
    text-indent: 40px;
 }
 
+main figcaption {
+  text-align: center;
+}
+
 .equation {
   text-align: center;
   font-family: LM;
