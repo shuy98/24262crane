@@ -155,6 +155,7 @@ main section {
 
 main section p {
    text-indent: 40px;
+   text-align: justify;
 }
 
 main figcaption {
@@ -197,7 +198,6 @@ main iframe {
 
 #v_base {
   display: inline-block; 
-  float: right; 
   margin: 0;
   width: 40%;
 }
