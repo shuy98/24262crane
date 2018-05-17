@@ -26,11 +26,9 @@ header #back_to_top {
   transition: bottom 0.2s ease-in-out;
 }
 
-.w3-container {
-  margin: 0;
-  padding: 0;
+p {
+  text-align: justify;
 }
-
 
 /*banner*/
 
@@ -46,47 +44,22 @@ header #back_to_top {
   text-decoration: none;
 }
 
-#logo_cmu_1 {
+#logo_me {
   font-size: 20pt;
-  padding-left: 15px;
-  margin-top: 0;
-  padding-top: 20px;
+  padding: 20px 0 0 15px;
+  margin: 0;
   background-color: white;
+  line-height: 1em;
 }
 
-#logo_cmu_2 {
-  font-size: 20pt;
-  padding-left: 15px;
-  margin-top: -65px;
-  background-color: white; 
-}
-
-#course_title_1 {
+#logo_course_title {
   font-size: 16pt;
-  padding-left: 15px;
-  margin-top: -50px;
+  padding: 15px 0 20px 15px;
+  margin: 0;
   background-color: white;
   color: #4d4d4d;
+  line-height: 1em;
 }
-
-#course_title_2 {
-  font-size: 16pt;
-  padding-left: 15px;
-  margin-top: -55px;
-  background-color: white;
-  color: #4d4d4d;
-}
-
-#course_title_3 {
-  font-size: 16pt;
-  padding-left: 15px;
-  padding-bottom: 20px;
-  margin-top: -55px;
-  margin-bottom: 0;
-  background-color: white;
-  color: #4d4d4d;
-}
-
 
 #banner_m {
   display: none;
@@ -101,13 +74,12 @@ header #back_to_top {
 
 
 .w3-sidebar {
-  display: inline-block;
   background-color: #990000;
-  width: 183px;
   overflow-x: hidden;
   overflow-y: auto;
+  left:0;
+  top:0;
 }
-
 
 .w3-button {
   transition: 0.3s;
@@ -124,9 +96,8 @@ main {
   min-width: 360px;
 }
 
-.p_vertical {
-  display: inline-block; 
-  width: 55%
+main p {
+  text-indent: 40px;
 }
 
 .subheading {
@@ -137,14 +108,6 @@ main {
   margin: 0 0 0 20px;
 }
 
-.subsection p {  
-  text-indent: 0;
-}
-
-.p_indent p {
-  text-indent: 40px;
-}
-
 ol { 
   padding: 0 0 0 20px;;
 }
@@ -153,23 +116,14 @@ main section {
    margin-bottom: 40px;
 }
 
-main section p {
-   text-indent: 40px;
-   text-align: justify;
-}
-
-main figcaption {
-  text-align: center;
-}
-
 .equation {
   text-align: center;
   font-family: LM;
   font-size: 14pt;
 }
 
-main iframe {
-  margin-bottom: 10px;
+main figure {
+  margin: 10px 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -254,6 +208,7 @@ footer {
     padding-left: 30px;
     font-size: 16pt;
     position: fixed;
+    top: 0;
     background-color: #990000;
   }
 

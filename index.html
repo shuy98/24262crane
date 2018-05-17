@@ -15,27 +15,31 @@
 
 <body>
   <header>
+    <!-- banner -->
+    <div id="banner">
+      <h1 class="project_name" id="top">S18 24-262 Stress Analysis Crane Project </h1>
+      <h2 id="groupinfo">Group 7 <br>
+      with Jason Liu (limingl), Tom An (zixia), and Shu You (shuy)</h2>
+      <hr>
+    </div>
 
     <!-- mobile banner -->
     <div id="banner_m" class="w3-bar">
       <a href="https://www.meche.engineering.cmu.edu/" target="_blank">
-      <p id="logo_cmu_m">Mechanical Engineering<br></p>
-      <p id="logo_dprt_m">Crane Project Group 7</p>
+        <p id="logo_cmu_m">Mechanical Engineering</p>
+        <p id="logo_dprt_m">Crane Project Group 7</p>
       </a>
     </div>
 
     <!-- back to top -->
-    <a href="#logo_cmu_1" id="back_to_top" class="back_to_top_button"><span class="fa fa-chevron-circle-up"></span></a>
+    <a href="#logo_me" id="back_to_top" class="back_to_top_button"><span class="fa fa-chevron-circle-up"></span></a>
 
     <!-- sidebar -->
-    <nav role="navigation" class="w3-sidebar w3-bar-block w3-left" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block" id="mySidebar">
 
       <a href="https://www.meche.engineering.cmu.edu/" target="_blank" id="logo_link" title="CMU MechE Home Page">
-        <p id="logo_cmu_1">Mechanical</p><br>
-        <p id="logo_cmu_2">Engineering</p><br>
-        <p id="course_title_1">S18 24-262</p><br>
-        <p id="course_title_2">Crane Project</p><br>
-        <p id="course_title_3">Group 7</p>
+        <p id="logo_me">Mechanical<br>Engineering</p>
+        <p id="logo_course_title">S18 24-262<br>Crane Project<br>Group 7</p>
       </a>
 
       <div class="nav_main_links">
@@ -47,30 +51,24 @@
       </div>
     </nav>
 
-    <!-- banner -->
-    <div id="banner">
-      <h1 class="project_name" id="top">S18 24-262 Stress Analysis Crane Project </h1>
-      <h2 id="groupinfo">Group 7 <br>
-      with Jason Liu (limingl), Tom An (zixia), and Shu You (shuy)</h2>
-      <hr>
-    </div>
   </header>
 
   <main>
     <section>
       <h3 id="About">About this project</h3>
-      <p>The objective of this project is to design and build a mechanism that is powered by a standard servomotor, which will lift a cylindrical weight. The mechanism is to be clamped in a given position while the other end lifts a weight that slides along a vertical post. Between the clamping area for the base of the design and the post holding the weight sits an obstacle. The mechanism may not touch the obstacle or any other surface besides the base and the sliding weight. We will build such a mechanism that is no more than <i>20Oz</i>, and it should be able to lift a <i>1lb</i> weight at least <i>2in</i> high.</p>
-      <figure>
-        <iframe scrolling='no' frameborder='0' allowfullscreen='true' src='http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&catalogid=171&modelid=925877&width=250&height=250&edraw=true' name='PreviewFrame3D' id='PreviewFrame3D' ></iframe><br/>
-        <figcaption>Our Mechanism</figcaption>
-      </figure>
+      <div class="subsection">
+        <p>The objective of this project is to design and build a mechanism that is powered by a standard servomotor, which will lift a cylindrical weight. The mechanism is to be clamped in a given position while the other end lifts a weight that slides along a vertical post. Between the clamping area for the base of the design and the post holding the weight sits an obstacle. The mechanism may not touch the obstacle or any other surface besides the base and the sliding weight. We will build such a mechanism that is no more than <i>20Oz</i>, and it should be able to lift a <i>1lb</i> weight at least <i>2in</i> high.</p>
+        <figure>
+          <iframe scrolling='no' frameborder='0' allowfullscreen='true' src='http://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&catalogid=171&modelid=925877&width=250&height=250&edraw=true' name='PreviewFrame3D' id='PreviewFrame3D' ></iframe><br/>
+        </figure>
+      </div>
     </section>
 
     <hr>
 
     <section>
       <h3 id="Features">Features</h3>
-      <section class="subsection p_indent">
+      <div class="subsection">
         <div class="crane_pics_side">
             <img src="images/servo.png" alt="servo" width="100%">
         </div> 
@@ -82,18 +80,18 @@
         </p>
         <p>We designed our counterweight arm to provide just enough moment to assist the servo in lifting the weight, but not to negatively affect the lifting capacity by (a) adjusting the length so it doesn’t make contact with the ground, and (b) using a guiding rail on the side of the main frame to prevent collision between the counterweight and the main body.            
         </p>        
-      </section>      
+      </div>      
     </section>
 
     <hr>
 
     <section>
       <h3 id="Performance">Performance Analysis</h3>
-      <section class="subsection">
+      <div class="subsection">
         <h4 class="subheading">Actual Distance Lifted: <b>4.78 inches</b></h4>
         <br>
-      </section>
-      <section class="subsection">
+      </div>
+      <div class="subsection">
         <h4 class="subheading">Theoretical Servo Torque Calculation</h4>
         <p><b>Assumptions in calculation: the load exerts a force of 1 lb. perpendicular to the servo arm; the gravitational force of the counter weight always acts perpendicular to the counterweight arm. Servo has torque 57oz-in.</b></p>
         <p>Distance between servo rotating axis and the contact point of the servo arm   is 3 inches.<br>
@@ -104,49 +102,51 @@
         <p class="equation">100% &middot; (<sup>8.05oz-in</sup>&frasl;<sub>57oz-in</sub>) = <b>14.12%</b></p> 
         of total torque.
         </p>
-      </section>
+      </div>
       <div class="crane_pics">
         <img src="images/crane1_annotated.png" alt="crane1_annotated" width="48%"><!--
         --><img src="images/crane2_annotated.png" alt="crane2_annotated" width="48%">
       </div>
-      <section class="subsection">
+      <div class="subsection">
         <h4 class="subheading">Theoretical Lift Distance Calculation</h4>
         <p><b>Assumptions: the point of contact between the crane and the weight is fixed, and the crane does not move during the process.</b></p>
         <p>The angular rotation of the servo arm is approximately 90 degrees; the servo arm rests initially at a 45-degree angle with the table surface. 
         Let initial height be 0, we have final height z: 
         <p class="equation">z = (3in &middot; sin(<sup>90</sup>&frasl;<sub>2</sub>)) &middot; 2 = <b>4.24in</b></p> 
         </p>
-      </section>
+      </div>
     </section>
 
     <hr>
 
     <section>
       <h3 id="Principle">Structural Principles</h3>
-      <section class="subsection">        
+      <div class="subsection">        
         <p>In this part of the main frame, the internal loading is mostly bending moment in the vertical plane. Therefore, we decided to use four L-shaped 0.75’’ aluminum strips on the top and bottom of the frame, with a larger spacing in the vertical direction than in the horizontal, in order to increase the second moment of inertia (I) and make it more resistance to bending in the vertical plane. We also added L-shaped trusses in between the bottom and top plane to limit deflection.
         </p>
         <div class="crane_pics">
           <img src="images/arm.jpg" alt="arm" width="100%" style="margin-bottom: 30px;margin-left: 0;">
         </div>
-        <div class="w3-container crane_pics"> 
-          <div class="p_vertical">In this part of the main frame, our major concern of internal loading comes from torsion (as shown below). To limit deflection, we added two flat aluminum strips oriented in opposite diagonals on the top and bottom respectively. This configuration increases Ip near the base and therefore is more resistant to torsion. We can also adjust the tension in these strips to control the angle of the main frame under loads.</div>  
+        <div class="crane_pics"> 
+          <p>In this part of the main frame, our major concern of internal loading comes from torsion (as shown below). To limit deflection, we added two flat aluminum strips oriented in opposite diagonals on the top and bottom respectively. This configuration increases Ip near the base and therefore is more resistant to torsion. We can also adjust the tension in these strips to control the angle of the main frame under loads.</p>  
           <img src="images/base.jpg" alt="base" width="40%" id="v_base">    
         </div>         
-      </section>
+      </div>
     </section>
 
     <hr>
 
     <section>
       <h3 id="Gallery">Gallery</h3>
-      <div class="crane_pics">
-        <img src="images/fea.png" alt="Finite element analysis" width="48%"><!--
-        --><img src="images/crane3_annotated.png" alt="crane drawing" width="48%"><!--
-        --><img src="images/crane_pic_1.jpg" alt="crane_pic_1" width="48%"><!--
-        --><img src="images/crane_pic_2.jpg" alt="crane_pic_2" width="48%"><!--
-        --><img src="images/crane_pic_3.jpg" alt="crane_pic_3" width="48%"><!--
-        --><img src="images/crane_pic_4.jpg" alt="crane_pic_4" width="48%">
+      <div class="subsection">
+        <div class="crane_pics">
+          <img src="images/fea.png" alt="Finite element analysis" width="48%"><!--
+          --><img src="images/crane3_annotated.png" alt="crane drawing" width="48%"><!--
+          --><img src="images/crane_pic_1.jpg" alt="crane_pic_1" width="48%"><!--
+          --><img src="images/crane_pic_2.jpg" alt="crane_pic_2" width="48%"><!--
+          --><img src="images/crane_pic_3.jpg" alt="crane_pic_3" width="48%"><!--
+          --><img src="images/crane_pic_4.jpg" alt="crane_pic_4" width="48%">
+        </div>
       </div>
     </section>
   </main>
